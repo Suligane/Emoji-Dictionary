@@ -54,7 +54,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A racecar sponsored by Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ru-IR-9JD">
                                 <rect key="frame" x="10" y="747" width="355" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -64,25 +64,43 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year:2013" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXU-pu-ggs">
+                                <rect key="frame" x="128.66666666666666" y="718" width="118" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Transportation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY0-tY-Q7v">
+                                <rect key="frame" x="91.666666666666686" y="689" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="0Ru-IR-9JD" firstAttribute="top" secondItem="BXU-pu-ggs" secondAttribute="bottom" constant="8" id="A1M-BI-nKU"/>
                             <constraint firstItem="3WD-Ro-bGg" firstAttribute="trailing" secondItem="0Ru-IR-9JD" secondAttribute="trailing" constant="10" id="FRb-Bl-UUA"/>
+                            <constraint firstItem="0Ru-IR-9JD" firstAttribute="top" secondItem="WY0-tY-Q7v" secondAttribute="bottom" constant="37" id="Kcq-qk-MJ0"/>
+                            <constraint firstItem="BXU-pu-ggs" firstAttribute="centerX" secondItem="SAL-aG-aCC" secondAttribute="centerX" id="XUB-Tv-sQH"/>
                             <constraint firstItem="0Ru-IR-9JD" firstAttribute="leading" secondItem="3WD-Ro-bGg" secondAttribute="leading" constant="10" id="bDq-Sr-DmI"/>
                             <constraint firstItem="3WD-Ro-bGg" firstAttribute="bottom" secondItem="0Ru-IR-9JD" secondAttribute="bottom" constant="10" id="gKz-po-GIB"/>
                             <constraint firstItem="2jf-7y-YLx" firstAttribute="centerX" secondItem="SAL-aG-aCC" secondAttribute="centerX" id="mSI-Iv-scr"/>
                             <constraint firstItem="2jf-7y-YLx" firstAttribute="top" secondItem="3WD-Ro-bGg" secondAttribute="top" constant="20" id="ulh-Ir-eFm"/>
+                            <constraint firstItem="WY0-tY-Q7v" firstAttribute="centerX" secondItem="SAL-aG-aCC" secondAttribute="centerX" id="x3v-wK-wVp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3WD-Ro-bGg"/>
                     </view>
                     <connections>
+                        <outlet property="birthLabel" destination="BXU-pu-ggs" id="kDd-sN-ytj"/>
+                        <outlet property="categoryLabel" destination="WY0-tY-Q7v" id="1S8-Z3-9z9"/>
                         <outlet property="emojiDefinitionLabel" destination="0Ru-IR-9JD" id="b8R-nm-xCB"/>
                         <outlet property="emojiLabel" destination="2jf-7y-YLx" id="pPk-yS-uyL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi9-Ph-QsQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1527" y="106"/>
+            <point key="canvasLocation" x="1525.5999999999999" y="105.66502463054188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FxU-eC-JhN">
